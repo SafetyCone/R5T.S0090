@@ -14,6 +14,11 @@
     <RepositoryUrl>https://github.com/SafetyCone/R5T.S0090.git</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="Code\Functionality\**" />
+    <EmbeddedResource Remove="Code\Functionality\**" />
+    <None Remove="Code\Functionality\**" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\..\R5T.L0035\source\R5T.L0035\R5T.L0035.csproj" />
     <ProjectReference Include="..\..\..\R5T.L0055\source\R5T.L0055\R5T.L0055.csproj" />
     <ProjectReference Include="..\..\..\R5T.S0089\source\R5T.S0089\R5T.S0089.csproj" />
@@ -21,8 +26,6 @@
     <ProjectReference Include="..\..\..\R5T.L0054\source\R5T.L0054\R5T.L0054.csproj" />
     <ProjectReference Include="..\..\..\R5T.Z0061\source\R5T.Z0061\R5T.Z0061.csproj" />
     <ProjectReference Include="..\..\..\R5T.L0059\source\R5T.L0059\R5T.L0059.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Code\Functionality\" />
+    <ProjectReference Include="..\..\..\R5T.L0068\source\R5T.L0068\R5T.L0068.csproj" />
   </ItemGroup>
 </Project>
